@@ -177,7 +177,7 @@
             <div class="container">
                 <div class="row mq-none-767-below">
                     <div class="col-md-4 text-center py-3" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800">
-                        <h1>27,000+</h1>
+                        <h1><span class="counter" data-target="27000" data-speed="100">0</span>+</h1>
                         <p class="text-uppercase col-winered">Entrepreneurs Trained</p>
                     </div>
                     <div class="col-md-4 text-center border-start py-3" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800">
@@ -190,15 +190,15 @@
                     </div>
                 </div>
                 <div class="row mq-none-767-above mx-4">
-                    <div class="col-md-4 text-center border-bottom p-3">
-                        <h1>27,000+</h1>
+                    <div class="col-md-4 text-center border-bottom p-3" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800">
+                        <h1><span class="counter" data-target="27000" data-speed="100">0</span>+</h1>
                         <p class="text-uppercase col-winered">Entrepreneurs Trained</p>
                     </div>
-                    <div class="col-md-4 text-center border-bottom p-3">
+                    <div class="col-md-4 text-center border-bottom p-3" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800">
                         <h1>8-Figures</h1>
                         <p class="text-uppercase col-winered">Revenue Generated</p>
                     </div>
-                    <div class="col-md-4 text-center p-3">
+                    <div class="col-md-4 text-center p-3" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800">
                         <h1>Global</h1>
                         <p class="text-uppercase col-winered">International Reach</p>
                     </div>
@@ -228,7 +228,7 @@
                             As the founder of The Academy of CLOSING, I've had the privilege of training over <strong>27,000 entrepreneurs</strong> across the globe, equipping them with the tools to shatter revenue ceilings and dominate their markets.
                         </p>
                     </div>
-                    <div class="col-md-6 py-4">
+                    <div class="col-md-6 pb-4 pt-0 pt-md-4">
                         <img class="w-100 rounded-5 mt-5 mt-lg-0" src="assets/img/victory-markson2.jpg" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1800" />
                     </div>
                 </div>
@@ -560,14 +560,6 @@
                 observer.observe(counter);
             });
 
-            // Typing Effect 
-            var typed = new Typed('#typing', {
-              strings: ['Exceptional', 'Beautiful', 'Wonderful'],
-              typeSpeed: 100,
-              backSpeed: 40,
-              loop: true
-            });  
-
             // Navbar Collapse for Link Click
             document.addEventListener("DOMContentLoaded", function () {
                 const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
@@ -588,28 +580,6 @@
 
         <script>
             AOS.init();
-        </script>
-
-        <script>
-            // Lazy Loading
-            document.addEventListener("DOMContentLoaded", function() {
-                const lazyCards = document.querySelectorAll('.lazy-el');
-
-                const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); 
-                    }
-                });
-                }, {
-                    threshold: 0.24
-                });
-
-                lazyCards.forEach(card => {
-                    observer.observe(card);
-                });
-            });
         </script>
 	</body>
 </html>

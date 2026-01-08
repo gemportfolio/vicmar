@@ -180,25 +180,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a, button {
 }
 
 
-/* CTA 1 SECTION */
-.cta1-section {
-  min-height: 64vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("img/cta-bg1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  display: flex;
-  align-items: center;
-}
-
-.cta1-section .container {
-  padding: 1.4rem;
-  max-width: 800px;
-}
-
-
 /* FOOTER */
 .footer {
     background-color: #efefef20;
